@@ -1,0 +1,31 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+- We knew that the bug had been introduced from a change we hand made in the new version of the file
+- `diff -u old new` displays only the changes introduced in the new version of the file.
+- This meant that we had far fewer lines of code to search through when looking for any mistakes
+
+*How could having easy access to the entire history of a file make you a more efficient programmer in the long term?*
+- If you introduce a feature that doesn't work or introduces bugs eslewhere in the program then it
+can be very difficult to find the problem
+- having access to previous versions of the working code makes it easier to track down bugs
+
+- When refactoring existing code it is tempting to leave existing code in place, 
+maybe you think you may want to revert back to it later, or use particular parts of it
+- With version control you can remove old code safe in the knowledge that you can still access it later
+- This decluters your work and leaves room for you to be more efficient. 
+
+*What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?*
+- Pros
+	- each git is meaningful and the wont break for silly reasons
+- Cons 
+	- You have to remember to commit 
+	- It takes time to commit
+
+*How can you use the commands git log and git diff to view the history of files?*
+- git log allows you to find the git id for commits 
+- then to comapre the difference between two commits you can use `git diff` with these ids.
+
+*How might using version control make you more confident to make changes that could break something?*
+- We can be more confident making a change that may break something as we know we have a past commit
+in which the code is working fine.
+- We can even use `git diff` to easily examine the difference bewteen the new and old commits to 
+track down any new bugs
