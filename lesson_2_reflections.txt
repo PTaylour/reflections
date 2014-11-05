@@ -6,3 +6,8 @@
 - no files like the working directory, no commits like the respository. 
 - space to organise what will make up the next commit
 - allows you to craft a commit into something meaningful
+
+_How can you use the staging area to make sure you have one commit per logical change?_
+- the staging area lets you choose which files are commited in a commit. 
+- you can add to the staging area only the files that have changes that together account to one
+logical change
