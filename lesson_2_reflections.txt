@@ -23,3 +23,12 @@ _What are some situations when branches would be helpful in keeping your history
 
 _How do the diagrams help you visualize the branch structure?_
 - you can see which commits are reachabable and who the parent to each it
+
+_What is the result of merging two branches together? Why do we represent it in the diagram the way we do?_
+- Merging one branch into another applies the changes in said branch into the branch you are currently checking out
+- It interleaves the commits in the branch's history
+- To see the changes introduced by a commit relavent to it's parent (ie not the chronologically previous commit)
+ use `git show <commit_id>`
+- In the diagram a merge commit points to each of each of the branches, it has two parents. 
+- The diagram shows how each commits parents are within the branch they came from
+- they both have the common ancester which is the commit at which the branch was created.
